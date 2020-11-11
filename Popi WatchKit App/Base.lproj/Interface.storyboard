@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Popi_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Categories" id="PZl-oL-23Y">
+                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <table alignment="left" id="g4R-at-ccu">
+                            <items>
+                                <tableRow identifier="Row" id="JN5-l0-C2y" customClass="CategoryRow" customModule="Popi_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="Zzu-mx-dz5">
+                                        <items>
+                                            <label width="1" height="1" alignment="left" verticalAlignment="center" text="Label" id="fVf-TX-GcY"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="categoryLabel" destination="fVf-TX-GcY" id="QPt-2a-i3G"/>
+                                        <segue destination="1TB-s4-2Rq" kind="push" identifier="nextSegue" id="fYl-cR-lWX"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="g4R-at-ccu" id="kJP-Se-jcw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="161" y="-11"/>
+        </scene>
+        <!--Channels Controller-->
+        <scene sceneID="dIE-RF-2gm">
+            <objects>
+                <controller id="1TB-s4-2Rq" customClass="ChannelsController" customModule="Popi_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Channels" id="2cm-Pw-OwA">
+                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <table alignment="left" id="4Vz-tM-bo6">
+                            <items>
+                                <tableRow identifier="Row" id="KTE-d8-qNY" customClass="ChannelRow" customModule="Popi_WatchKit_App" customModuleProvider="target">
+                                    <group key="rootItem" width="1" alignment="left" id="g3Y-XS-exO">
+                                        <items>
+                                            <label width="1" height="1" alignment="center" verticalAlignment="center" text="Label" id="2dF-uK-Ak8"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="2dF-uK-Ak8" id="Ehu-3W-APa"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="channelTable" destination="4Vz-tM-bo6" id="zNH-YR-9Yz"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="427" y="-11"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Popi_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Popi_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+</document>

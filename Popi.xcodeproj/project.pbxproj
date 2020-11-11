@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D1EF4F62559AB8700B22B6F /* Popi WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7D1EF4F52559AB8700B22B6F /* Popi WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7D1EF4FC2559AB8700B22B6F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D1EF4FA2559AB8700B22B6F /* Interface.storyboard */; };
+		7D1EF4FE2559AB8900B22B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1EF4FD2559AB8900B22B6F /* Assets.xcassets */; };
+		7D1EF5052559AB8900B22B6F /* Popi WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7D1EF5042559AB8900B22B6F /* Popi WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7D1EF50A2559AB8900B22B6F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1EF5092559AB8900B22B6F /* InterfaceController.swift */; };
+		7D1EF50C2559AB8900B22B6F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1EF50B2559AB8900B22B6F /* ExtensionDelegate.swift */; };
+		7D1EF50E2559AB8900B22B6F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1EF50D2559AB8900B22B6F /* NotificationController.swift */; };
+		7D1EF5102559AB8A00B22B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1EF50F2559AB8A00B22B6F /* Assets.xcassets */; };
+		7D1EF521255A845100B22B6F /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1EF520255A845100B22B6F /* CategoryRow.swift */; };
+		7D4FF64D255A94C9001A73A9 /* ChannelsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4FF64C255A94C9001A73A9 /* ChannelsController.swift */; };
+		7D4FF64F255A9526001A73A9 /* ChannelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4FF64E255A9526001A73A9 /* ChannelRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D1EF4F72559AB8700B22B6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D1EF4EB2559AB8700B22B6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D1EF4F42559AB8700B22B6F;
+			remoteInfo = "Popi WatchKit App";
+		};
+		7D1EF5062559AB8900B22B6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D1EF4EB2559AB8700B22B6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D1EF5032559AB8900B22B6F;
+			remoteInfo = "Popi WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7D1EF5182559AB8A00B22B6F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7D1EF5052559AB8900B22B6F /* Popi WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1EF51C2559AB8A00B22B6F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7D1EF4F62559AB8700B22B6F /* Popi WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7D1EF4F12559AB8700B22B6F /* Popi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Popi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1EF4F52559AB8700B22B6F /* Popi WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Popi WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1EF4FB2559AB8700B22B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7D1EF4FD2559AB8900B22B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D1EF4FF2559AB8900B22B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D1EF5042559AB8900B22B6F /* Popi WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Popi WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1EF5092559AB8900B22B6F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7D1EF50B2559AB8900B22B6F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7D1EF50D2559AB8900B22B6F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		7D1EF50F2559AB8A00B22B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D1EF5112559AB8A00B22B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D1EF5122559AB8A00B22B6F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		7D1EF520255A845100B22B6F /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		7D4FF64C255A94C9001A73A9 /* ChannelsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsController.swift; sourceTree = "<group>"; };
+		7D4FF64E255A9526001A73A9 /* ChannelRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D1EF5012559AB8900B22B6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D1EF4EA2559AB8700B22B6F = {
+			isa = PBXGroup;
+			children = (
+				7D1EF4F92559AB8700B22B6F /* Popi WatchKit App */,
+				7D1EF5082559AB8900B22B6F /* Popi WatchKit Extension */,
+				7D1EF4F22559AB8700B22B6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D1EF4F22559AB8700B22B6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D1EF4F12559AB8700B22B6F /* Popi.app */,
+				7D1EF4F52559AB8700B22B6F /* Popi WatchKit App.app */,
+				7D1EF5042559AB8900B22B6F /* Popi WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D1EF4F92559AB8700B22B6F /* Popi WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				7D1EF4FA2559AB8700B22B6F /* Interface.storyboard */,
+				7D1EF4FD2559AB8900B22B6F /* Assets.xcassets */,
+				7D1EF4FF2559AB8900B22B6F /* Info.plist */,
+			);
+			path = "Popi WatchKit App";
+			sourceTree = "<group>";
+		};
+		7D1EF5082559AB8900B22B6F /* Popi WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7D4FF64C255A94C9001A73A9 /* ChannelsController.swift */,
+				7D1EF5092559AB8900B22B6F /* InterfaceController.swift */,
+				7D4FF64E255A9526001A73A9 /* ChannelRow.swift */,
+				7D1EF520255A845100B22B6F /* CategoryRow.swift */,
+				7D1EF50B2559AB8900B22B6F /* ExtensionDelegate.swift */,
+				7D1EF50D2559AB8900B22B6F /* NotificationController.swift */,
+				7D1EF50F2559AB8A00B22B6F /* Assets.xcassets */,
+				7D1EF5112559AB8A00B22B6F /* Info.plist */,
+				7D1EF5122559AB8A00B22B6F /* PushNotificationPayload.apns */,
+			);
+			path = "Popi WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D1EF4F02559AB8700B22B6F /* Popi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D1EF51D2559AB8A00B22B6F /* Build configuration list for PBXNativeTarget "Popi" */;
+			buildPhases = (
+				7D1EF4EF2559AB8700B22B6F /* Resources */,
+				7D1EF51C2559AB8A00B22B6F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D1EF4F82559AB8700B22B6F /* PBXTargetDependency */,
+			);
+			name = Popi;
+			productName = Popi;
+			productReference = 7D1EF4F12559AB8700B22B6F /* Popi.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		7D1EF4F42559AB8700B22B6F /* Popi WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D1EF5192559AB8A00B22B6F /* Build configuration list for PBXNativeTarget "Popi WatchKit App" */;
+			buildPhases = (
+				7D1EF4F32559AB8700B22B6F /* Resources */,
+				7D1EF5182559AB8A00B22B6F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D1EF5072559AB8900B22B6F /* PBXTargetDependency */,
+			);
+			name = "Popi WatchKit App";
+			productName = "Popi WatchKit App";
+			productReference = 7D1EF4F52559AB8700B22B6F /* Popi WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7D1EF5032559AB8900B22B6F /* Popi WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D1EF5152559AB8A00B22B6F /* Build configuration list for PBXNativeTarget "Popi WatchKit Extension" */;
+			buildPhases = (
+				7D1EF5002559AB8900B22B6F /* Sources */,
+				7D1EF5012559AB8900B22B6F /* Frameworks */,
+				7D1EF5022559AB8900B22B6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Popi WatchKit Extension";
+			productName = "Popi WatchKit Extension";
+			productReference = 7D1EF5042559AB8900B22B6F /* Popi WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D1EF4EB2559AB8700B22B6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Atakan;
+				TargetAttributes = {
+					7D1EF4F02559AB8700B22B6F = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					7D1EF4F42559AB8700B22B6F = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					7D1EF5032559AB8900B22B6F = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 7D1EF4EE2559AB8700B22B6F /* Build configuration list for PBXProject "Popi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D1EF4EA2559AB8700B22B6F;
+			productRefGroup = 7D1EF4F22559AB8700B22B6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D1EF4F02559AB8700B22B6F /* Popi */,
+				7D1EF4F42559AB8700B22B6F /* Popi WatchKit App */,
+				7D1EF5032559AB8900B22B6F /* Popi WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D1EF4EF2559AB8700B22B6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1EF4F32559AB8700B22B6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1EF4FE2559AB8900B22B6F /* Assets.xcassets in Resources */,
+				7D1EF4FC2559AB8700B22B6F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1EF5022559AB8900B22B6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1EF5102559AB8A00B22B6F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D1EF5002559AB8900B22B6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1EF50E2559AB8900B22B6F /* NotificationController.swift in Sources */,
+				7D1EF50C2559AB8900B22B6F /* ExtensionDelegate.swift in Sources */,
+				7D4FF64F255A9526001A73A9 /* ChannelRow.swift in Sources */,
+				7D1EF521255A845100B22B6F /* CategoryRow.swift in Sources */,
+				7D4FF64D255A94C9001A73A9 /* ChannelsController.swift in Sources */,
+				7D1EF50A2559AB8900B22B6F /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D1EF4F82559AB8700B22B6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D1EF4F42559AB8700B22B6F /* Popi WatchKit App */;
+			targetProxy = 7D1EF4F72559AB8700B22B6F /* PBXContainerItemProxy */;
+		};
+		7D1EF5072559AB8900B22B6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D1EF5032559AB8900B22B6F /* Popi WatchKit Extension */;
+			targetProxy = 7D1EF5062559AB8900B22B6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D1EF4FA2559AB8700B22B6F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D1EF4FB2559AB8700B22B6F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D1EF5132559AB8A00B22B6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7D1EF5142559AB8A00B22B6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D1EF5162559AB8A00B22B6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Popi WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = atako.Popi.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		7D1EF5172559AB8A00B22B6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Popi WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = atako.Popi.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		7D1EF51A2559AB8A00B22B6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Popi_WatchKit_Extension;
+				INFOPLIST_FILE = "Popi WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = atako.Popi.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		7D1EF51B2559AB8A00B22B6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Popi_WatchKit_Extension;
+				INFOPLIST_FILE = "Popi WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = atako.Popi.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		7D1EF51E2559AB8A00B22B6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = atako.Popi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7D1EF51F2559AB8A00B22B6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = atako.Popi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D1EF4EE2559AB8700B22B6F /* Build configuration list for PBXProject "Popi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1EF5132559AB8A00B22B6F /* Debug */,
+				7D1EF5142559AB8A00B22B6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D1EF5152559AB8A00B22B6F /* Build configuration list for PBXNativeTarget "Popi WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1EF5162559AB8A00B22B6F /* Debug */,
+				7D1EF5172559AB8A00B22B6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D1EF5192559AB8A00B22B6F /* Build configuration list for PBXNativeTarget "Popi WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1EF51A2559AB8A00B22B6F /* Debug */,
+				7D1EF51B2559AB8A00B22B6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D1EF51D2559AB8A00B22B6F /* Build configuration list for PBXNativeTarget "Popi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1EF51E2559AB8A00B22B6F /* Debug */,
+				7D1EF51F2559AB8A00B22B6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D1EF4EB2559AB8700B22B6F /* Project object */;
+}
